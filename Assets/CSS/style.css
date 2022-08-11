@@ -1,0 +1,74 @@
+:root {
+  --bg-primary: #24204a;
+  --bg-secondary: #3f3b62;
+  --bg-tertiary: #3f3b62;
+  --color-primary: #ffffff;
+  --buttons-bg-primary: #4b4864;
+  --buttons-bg-secondary: #3f50e7;
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  src: url(/Assets/Fonts/tt-hoves/TT\ Hoves\ Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  src: url(/Assets/Fonts/tt-hoves/TT\ Hoves\ Regular.otf);
+  font-weight: 500;
+}
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+.header {
+  color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 25px auto;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: "TT Hoves";
+  font-weight: 700;
+}
+
+.navbar {
+  width: 554px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 237px;
+}
+
+.navbar > a {
+  font-family: "TT Hoves";
+  font-weight: 500;
+  opacity: 60%;
+}
+
+.submit-button {
+  width: 153px;
+  height: 48px;
+  background-color: var(--buttons-bg-primary);
+  border: 1px solid #8e88c1;
+  border-radius: 8px;
+  cursor:pointer;
+}
+
+hr {
+  width: 1170px;
+  height: 1px;
+  background: #8e88c1;
+}
