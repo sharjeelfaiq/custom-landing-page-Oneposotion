@@ -7,6 +7,12 @@
   --buttons-bg-secondary: #3f50e7;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "TT Hoves";
   src: url(/Assets/Fonts/TT\ Hoves\ Bold.otf);
@@ -81,24 +87,22 @@ body {
 }
 
 hr {
-    position: absolute;
     width: 1170px;
     height: 1px;
-    left: 115px;
-    top: 96px;
+    margin: 0 auto;
     background: #8e88c1;
 }
 
 .main-body {
   margin: 25px auto 0;
   max-width: 1170px;
-  display: flex;
 }
 
 .first-section {
   max-height: 393px;
-  max-width: 573px;
+  max-width: 1170px;
   padding-top: 50px;
+  display: flex;
 }
 
 .button-1 {
@@ -115,14 +119,14 @@ hr {
   cursor: pointer;
 }
 
-.first-section > h1 {
+.first-section h1 {
   font-size: 36px;
   font-family: "TT Hoves";
   font-weight: 700;
   margin: 0;
 }
 
-.first-section > p {
+.first-section p {
   margin: 0;
   padding-top: 27px;
   font-family: "Gilroy";
@@ -151,78 +155,28 @@ hr {
   text-align: center;
 }
 
-.side-content > img {
+.side-content img {
   width: 470px;
-  height: 500px;
-  position: absolute;
-  left: 800px;
-  top: 145px;
+  height: 450px;
+  position: relative;
+  right: 30px;
+  bottom: 20px;
 }
 
-.side-content > .bg-box {
-  width: 375px;
-  height: 411px;
+.side-content .bg-box {
+  width: 340px;
+  height: 390px;
   background: #827eac;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  position: absolute;
-  top: 190px;
-  left: 850px;
+  position: relative;
+  bottom: 440px;
+  left: 15px;
 }
 
-.side-content > .bg-box > img {
-  left: 891px;
-  top: 236px;
+.side-content .bg-box img {
   filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.25));
-}
-
-.second-section {
-  height: 100vh;
-  background-color: var(--bg-tertiary);
-  margin-top: 20vh;
-}
-
-.second-section_section-top {
-  color: var(--color-primary);
-  display: flex;
-  justify-content: space-between;
-  max-width: 1170px;
-  margin: 0px auto;
-  padding: 50px 0;
-  align-items: center;
-}
-
-.second-section_rectangle-1 {
-  width: 56.14px;
-  height: 56px;
-  background: #ff6853;
-  border-radius: 8px;
-}
-
-.second-section_rectangle-2 {
-  width: 56.14px;
-  height: 56px;
-  background: #ff6853;
-  border-radius: 8px;
-}
-
-.second-section_rectangle-3 {
-  width: 56.14px;
-  height: 56px;
-  background: #ff6853;
-  border-radius: 8px;
-}
-
-.second-section_rectangle-4 {
-  width: 56.14px;
-  height: 56px;
-  background: #ff6853;
-  border-radius: 8px;
-}
-
-.second-section_rectangle-5 {
-  width: 56.14px;
-  height: 56px;
-  background: #ff6853;
-  border-radius: 8px;
+  position: relative;
+  bottom: 20px;
+  right: 50px;
 }
